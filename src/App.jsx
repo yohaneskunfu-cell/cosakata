@@ -662,11 +662,9 @@ export default function App() {
   };
 
   const Logo = ({ size = 'md' }) => (
-    <img
-      src="/logo-smk.png"
-      alt="Logo SMK Bagimu Negeriku"
-      className={`${size === 'lg' ? 'w-20 h-20' : 'w-10 h-10'} rounded-full object-cover shrink-0`}
-    />
+    <div className={`${size === 'lg' ? 'w-14 h-14' : 'w-10 h-10'} rounded-full flex items-center justify-center shrink-0 ${theme.btnPrimary}`}>
+      <BookOpen className={size === 'lg' ? 'w-7 h-7' : 'w-5 h-5'} strokeWidth={1.5} />
+    </div>
   );
 
   const EmptyText = ({ children }) => (
